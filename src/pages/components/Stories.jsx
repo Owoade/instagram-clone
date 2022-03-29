@@ -26,7 +26,7 @@ const Stories = () => {
     return ( 
         <div className="story__navigation">
             <div className="story__wrapper">
-                <Flex width={{sm:"100%",base:"360px"}} justifyContent={{sm:"space-evenly",base:"space-between"}}>
+                <Flex width={{sm:"100%",base:"370px"}} justifyContent={{sm:"space-evenly",base:"space-between"}}>
                 {
                     stories.map(story => (<Story story = {story} />))
                 }

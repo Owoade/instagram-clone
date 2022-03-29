@@ -68,8 +68,8 @@ body{
     transform: translateY(.2em);
   }
   .avatar__story{
-    width:40px;
-    height:40px;
+    width:45px;
+    height:45px;
   }
   .story__navigation{
     padding: .5em;
@@ -77,4 +77,8 @@ body{
   .story__wrapper{
     overflow-x: scroll;
   }
+  .post__comment_avatar{
+    display:none;
+  }
+  
 }

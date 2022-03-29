@@ -3,7 +3,7 @@ const Post = ({post}) => {
     return ( 
        <Box width={"100%"} color="white"  marginBottom={"1em"} padding="1em 0" backgroundColor="black"   border="1px solid grey" borderRadius={"20px"}>
            {/* Top Box */}
-          <Flex width={"100%"} padding="0 20px" marginBottom={"1em"}>
+          <Flex width={"100%"} padding={{xs:"0 20px",base:"0 10px"}} marginBottom={"1em"}>
             <Flex width={"90px"}>
                     <img src={post.p_pic} alt="" className="avatar"  />
                     <Spacer />
@@ -20,7 +20,7 @@ const Post = ({post}) => {
           <img src={post.image} alt="" style={{width:"100%"}} />
           {/* Bottom Box */}
 
-          <Box padding={".7em 20px"}>
+          <Box padding={{xs:".7em 20px",base:".7em 10px"}}>
               {/* Icon Box */}
               <Box>
                   {/* Icon Box */}
@@ -39,15 +39,15 @@ const Post = ({post}) => {
                   </Flex>
               </Box>
               <Text fontWeight={"bold"} fontSize="13px" margin={"15px 0"}>{post.likes } likes</Text>
-              <Text>
+              <Text fontSize={{xs:"inherit",base:"14px"}}>
                   {post.caption}
               </Text>
               {post.comments > 0 ? <Text color={"grey"} margin=".5em 0" fontSize={"14px"}>View all {post.comments} comments</Text> : <></>} 
               {/* Last Container */}
-              <Flex width={"100%"} marginTop="20px">
-                <img src={post.p_pic} alt="" className="avatar"  />
-                <Spacer />
-                 <Box backgroundColor={"black"} width="90%" border="1px solid grey" cursor="text" borderRadius={"20px"} position="relative">
+              <Flex width={"100%"} marginTop="20px" justifyContent={"space-between"}>
+                <img src={post.p_pic} alt="" className="avatar post__comment_avatar"  />
+                
+                 <Box backgroundColor={"black"} width={{xs:"90%",base:"100%"}} border="1px solid grey" cursor="text" borderRadius={"20px"} position="relative" padding={{xs:"0",base:".5em 0"}}>
                      <input type="text" placeholder="Type your comment..."  className="post__comment_box" />
                      <div className="comment__icons">
                         <i className="ri-image-line comment__icon"></i>
