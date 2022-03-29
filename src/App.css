@@ -1,0 +1,80 @@
+.logo{
+  font-family: 'Cookie', cursive;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Nunito', sans-serif !important;
+  color:white
+}
+.avatar{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: rgb(39, 38, 38);
+}
+.header__camera,.header__send{
+  display:none;
+}
+.avatar__story{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+}
+.post__comment_box{
+  background: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline:none;
+  display: block;
+  color:white;
+  padding-left: 10px;
+}
+.post__comment_box ::placeholder{
+  color: grey !important;
+  font-size: 10px !important;
+  display: none;
+}
+.comment__icon{
+ color: grey;
+ margin: 0 .3em;
+}
+.comment__icons{
+  right: 10px;
+  top: 5px;
+  position:absolute;
+ 
+}
+.story__navigation{
+  /* margin-bottom:{"1em"} padding="1em 0" backgroundColor="black" width={"100%"}   border="1px solid grey" color={"grey"} borderRadius="20px"  */
+  margin-bottom: 1em;
+  padding:1em 0;
+  background-color: black;
+  width:100%;
+  border:1px solid grey;
+  color:grey;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+@media (max-width:400px) {
+  .header__camera,.header__send{
+    display: block;
+    font-size: 22px;
+    transform: translateY(.2em);
+  }
+  .avatar__story{
+    width:40px;
+    height:40px;
+  }
+  .story__navigation{
+    padding: .5em;
+  }
+  .story__wrapper{
+    overflow-x: scroll;
+  }
+}
