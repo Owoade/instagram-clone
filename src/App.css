@@ -7,7 +7,8 @@
 }
 body{
   font-family: 'Nunito', sans-serif !important;
-  color:white
+  color:white;
+  background-color: #323232 !important;
 }
 .avatar{
   width: 35px;
@@ -79,6 +80,7 @@ body{
   }
   .post__comment_avatar{
     display:none;
+    color:rgba(22, 22, 22, 0.295)
   }
   
 }

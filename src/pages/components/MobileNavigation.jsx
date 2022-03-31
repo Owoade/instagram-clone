@@ -1,30 +1,37 @@
 import { Box,Flex } from "@chakra-ui/react";
+import {Link} from "react-router-dom"
 const MobileNavigation = ({active}) => {
     const links = [
         {
             iconClass: "ri-home-5-line",
             active: "ri-home-5-fill",
-            name: "Home"
+            name: "Home",
+            path:"/"
+        },
+      
+        {
+            iconClass: "ri-search-line",
+            active: "ri-search-fill",
+            name: "Explore",
+            path:"/explore"
         },
         {
-            iconClass: "ri-video-line",
-            active: "ri-video-fill",
-            name: "IG TV"
-        },
-        {
-            iconClass: "ri-compass-3-line",
-            active: "ri-compass-3-fill",
-            name: "Explore"
+            iconClass: "ri-add-box-line",
+            active: "ri-add-box-fill",
+            name: "Post",
+            path:"/"
         },
         {
             iconClass:"ri-heart-line",
             active:"ri-heart-fill",
-            name:"Notifications"
+            name:"Notifications",
+            path:"/"
         },
         {
             iconClass:"ri-user-line",
             active:"ri-user-fill",
-            name:"Profile"
+            name:"Profile",
+            path:"/"
         }
     ]
     return ( 
@@ -32,7 +39,8 @@ const MobileNavigation = ({active}) => {
           <Flex width={"100%"} justifyContent="space-between" backgroundColor={"#252525"} color="white" position={"fixed"} top={"93vh"} padding="0 10px 10px 10px" display={{base:"flex",xs:"none"}}>
             {
                 links.map(link => (
-                    <i className={`${link.name == active ? link.active : link.iconClass}`} style={{fontSize:"25px",transform:"translateY(.2em)",display:"block",fontWeight:"100"}}></i>
+
+                    <Link  to={link.path}><i className={`${link.name == active ? link.active : link.iconClass}`} style={{fontSize:"25px",transform:"translateY(.2em)",display:"block",fontWeight:"100"}}></i></Link>
                 ))
             }
           </Flex>
