@@ -4,7 +4,7 @@ const HomeProfileCard = () => {
     return ( 
         <Flex width={"100%"}>
             <Flex>
-            <img src="https://images.unsplash.com/photo-1648376306856-906ebf86b087?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" className="avatar__story" />
+            <img src="https://res.cloudinary.com/dles2mycv/image/upload/v1648915936/pexels-jorge-fakhouri-filho-2701570_m336qt.jpg" alt="" className="avatar__story" />
            
            <Box fontSize={"13px"}  transform={"translateY(.6em)"} marginLeft="10px">
                <strong style={{color:"white"}}>Mary_j</strong>

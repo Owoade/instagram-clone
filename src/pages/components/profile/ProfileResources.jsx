@@ -27,7 +27,22 @@ const ProfileResources = ({active}) => {
             comments:20,
             likes:200,
             image:"https://images.unsplash.com/photo-1585602279350-5bd137238b2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        },
+        ,
+        {
+            comments:20,
+            likes:100,
+            image:"https://images.unsplash.com/photo-1634304669792-b774a8c9ac7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+        },{
+            comments:20,
+            likes:10,
+            image:"https://images.unsplash.com/photo-1620274549078-11bf5291cb9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZhc2hpb24lMjBtb2RlbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
+        },{
+            comments:20,
+            likes:10,
+            image:"https://images.unsplash.com/photo-1616186692359-e14c5224e4e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
         }
+        
     ]
     if(active == "POST"){
         return ( 

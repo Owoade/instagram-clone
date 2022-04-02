@@ -3,13 +3,13 @@ import Post from "./Post"
 const Posts = () => {
     const posts =[ 
         {
-            image : "https://images.unsplash.com/photo-1648412342899-ce7a68864d0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+            image : "https://images.unsplash.com/photo-1628165471922-ac39730508c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=520&q=80",
             username:"Joyy",
             p_pic:"https://images.unsplash.com/photo-1648376306856-906ebf86b087?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
             likes:3000,
             comments:40,
             caption:"Photo by No-Limits Adventure Cape Verde on March 28, 2022.",
-            liked:false
+            liked:true
         },{
             image:"https://images.unsplash.com/photo-1648372152629-da8be6035529?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=413&q=80",
             username:"Mikee",

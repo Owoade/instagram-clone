@@ -17,7 +17,7 @@ const DesktopNavigation = ({ active }) => {
             iconClass: "ri-add-box-line",
             active: "ri-add-box-fill",
             name: "Post",
-            path:"/"
+            path:"/gallery"
         }
     ]
     return (

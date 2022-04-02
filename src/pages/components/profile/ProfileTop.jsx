@@ -2,7 +2,7 @@ import { Box, Flex, Text,Button } from "@chakra-ui/react";
 import {Link} from "react-router-dom"
 const ProfileTop = () => {
     return (
-        <Box width={{lt:"900px",xs:"90%",base:"100%"}} bgColor={{xs:"#323232",base:"black"}} margin="0 auto" paddingTop={{xs:"0",base:"2em"}}>
+        <Box width={{lt:"900px",xs:"90%",base:"100%"}}  margin="0 auto" paddingTop={{xs:"0",base:"2em"}}>
             <Flex display={{sm:"flex",base:"block"}}>
                 {/* Avatar */}
                 <Box height="fit-content" width="fit-content" background=" linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);" borderRadius={"50%"} padding=".2em" overflow="hidden" display="flex" justifyContent={"center"} alignItems="center" margin={{md:"0 0 10%",sm:"0%",base:"0px auto 0 auto"}}>
@@ -29,7 +29,7 @@ const ProfileTop = () => {
                     {/* Stats */}
                     <Flex width="300px" display={{md:"flex",base:"none"}}  margin="1em 0" justifyContent={"space-between"}>
                             <Box color="white">
-                                <Text fontWeight={"bold"}>10 <span style={{display:"inline-block",fontWeight:"lighter"}}> posts</span></Text> 
+                                <Text fontWeight={"bold"}>9 <span style={{display:"inline-block",fontWeight:"lighter"}}> posts</span></Text> 
                             </Box>
                             <Box color="white">
                                 <Text fontWeight={"bold"}>30 <span style={{display:"inline-block",fontWeight:"lighter"}}> followers</span></Text> 
@@ -71,7 +71,7 @@ const ProfileTop = () => {
             </Box>
             <Flex width="100%" bgColor="#323232" display={{ md: "none", base: "flex" }} marginTop=".5em" justifyContent={"space-around"} borderTop="1px solid grey" paddingTop=".5em" >
                 <Box color="white" textAlign={"center"}>
-                    <Text fontWeight={"bold"}>10 <span style={{ display: "block", fontWeight: "lighter",color:"whitesmoke" }}> posts</span></Text>
+                    <Text fontWeight={"bold"}>9 <span style={{ display: "block", fontWeight: "lighter",color:"whitesmoke" }}> posts</span></Text>
                 </Box>
                 <Box color="white" textAlign={"center"}>
                     <Text fontWeight={"bold"}>30 <span style={{ display: "block", fontWeight: "lighter",color:"whitesmoke" }}> followers</span></Text>

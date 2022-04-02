@@ -19,13 +19,13 @@ const MobileNavigation = ({active}) => {
             iconClass: "ri-add-box-line",
             active: "ri-add-box-fill",
             name: "Post",
-            path:"/"
+            path:"/gallery"
         },
         {
             iconClass:"ri-heart-line",
             active:"ri-heart-fill",
             name:"Notifications",
-            path:"/"
+            path:"/activities"
         },
         {
             iconClass:"ri-user-line",

@@ -81,13 +81,13 @@ const Explore = () => {
         }
     ]
     return (
-        <Box position={"relative"}  bgColor={"#323232"} height="fit-content">
+        <Box position={"relative"}  bgColor={"#323232"}  height="fit-content">
 
             <Header active={"Explore"} />
-            <Box display={{md:"none",base:"block"}} border="1px solid grey" width="100%" bgColor={"black"} padding="1em 0">
+            <Box display={{md:"none",base:"block"}} position="fixed" zIndex="5" top="4em" width="100%" bgColor={"black"} padding="1em 0">
                <input type="text" placeholder="Search..." className="explore__search_input" />
             </Box>
-            <Box width="100%" backgroundColor={"#323232 !important"} padding={{xs:"2em 0",base:".2em 0"}} position={"relative"} height="100%">
+            <Box width="100%" backgroundColor={"#323232 !important"} padding={{xs:"2em 0",base:"3.6em 0"}} position={"relative"} height="100%">
                 
                     <Box width={{md:"940px",base:"98%"}} margin="0 auto">
                        {
