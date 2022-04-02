@@ -36,7 +36,7 @@ const MobileNavigation = ({active}) => {
     ]
     return ( 
         <div className="mobile__navigation">
-          <Flex width={"100%"} justifyContent="space-between" backgroundColor={"#252525"} color="white" position={"fixed"} top={"93vh"} padding="0 10px 10px 10px" display={{base:"flex",xs:"none"}}>
+          <Flex width={"100%"} justifyContent="space-between" backgroundColor={"#252525"} color="white" position={"fixed"} top={"93vh"} padding="0 10px 20px 10px" display={{base:"flex",xs:"none"}}>
             {
                 links.map(link => (
 
