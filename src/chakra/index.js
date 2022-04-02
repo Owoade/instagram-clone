@@ -12,7 +12,7 @@ const breakpoints = createBreakpoints({
   lg: '1100px',
   xl: '1280px',
   '2xl': '1440px',
-  'final':"10px"
+  lt:"950px"
 });
 
 //The theme property we are extending

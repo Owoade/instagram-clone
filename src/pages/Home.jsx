@@ -4,8 +4,8 @@ import MainContent from "./components/home/MainContent";
 import SideContent from "./components/home/SideContent";
 import Wrapper from "./components/Wrapper"
 import MobileNavigation from "./components/MobileNavigation";
-
 const Home = () => {
+   
     return ( 
         <Box position={"relative"}>
             <Header active={"Home"} />

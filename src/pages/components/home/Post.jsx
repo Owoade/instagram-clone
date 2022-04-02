@@ -1,5 +1,7 @@
 import { Box,Flex,Text,Spacer,Input } from "@chakra-ui/react";
+import {useRef} from "react"
 const Post = ({post}) => {
+    const inputRef = useRef({current:0})
     return ( 
        <Box width={"100%"} color="white"  marginBottom={"1em"} padding="1em 0" backgroundColor="black"   border="1px solid grey" borderRadius={"20px"}>
            {/* Top Box */}
@@ -29,7 +31,7 @@ const Post = ({post}) => {
                       <Flex width={"80px"}>
                          { post.liked==true ? <i className="ri-heart-fill" style={{color:"red",display:"block",fontSize:"18px"}}></i>:<i className="ri-heart-line" style={{display:"block",color:"white",fontSize:"18px"}}></i> }
                          <Spacer />
-                         <i className="ri-chat-3-line" style={{fontSize:"18px"}}></i>
+                         <i className="ri-chat-3-line" onClick={()=> inputRef.focus()} style={{fontSize:"18px"}}></i>
                          <Spacer />
                          <i className="ri-send-plane-2-line" style={{fontSize:"18px"}}></i>
                       </Flex>
@@ -48,7 +50,7 @@ const Post = ({post}) => {
                 <img src={post.p_pic} alt="" className="avatar post__comment_avatar"  />
                 
                  <Box backgroundColor={"black"} width={{xs:"90%",base:"100%"}} border="1px solid grey" cursor="text" borderRadius={"20px"} position="relative" padding={{xs:"0",base:".5em 0"}}>
-                     <input type="text" placeholder="Type your comment..."  className="post__comment_box" />
+                     <input type="text" ref={inputRef} placeholder="Type your comment..."  className="post__comment_box" />
                      <div className="comment__icons">
                         <i className="ri-image-line comment__icon"></i>
                         <i className="ri-emotion-happy-line comment__icon"></i>

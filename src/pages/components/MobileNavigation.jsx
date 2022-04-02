@@ -31,7 +31,7 @@ const MobileNavigation = ({active}) => {
             iconClass:"ri-user-line",
             active:"ri-user-fill",
             name:"Profile",
-            path:"/"
+            path:"/profile"
         }
     ]
     return ( 

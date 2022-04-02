@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box,Input } from "@chakra-ui/react";
 import GridDisplay from "./components/GridDisplay";
 import Header from "./components/header/Header";
 import MobileNavigation from "./components/MobileNavigation";
@@ -45,7 +45,7 @@ const Explore = () => {
                 },{
                     comments:300,
                     likes:20,
-                    image:"https://images.unsplash.com/photo-1578354985657-65776ee4ae90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=567&q=80"
+                    image:"https://images.unsplash.com/photo-1608142172765-6949c94646ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
                 },{
                     image:"https://images.unsplash.com/photo-1622554129912-c541b2542385?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
                     comments:300,
@@ -84,9 +84,12 @@ const Explore = () => {
         <Box position={"relative"}  bgColor={"#323232"} height="fit-content">
 
             <Header active={"Explore"} />
-            <Box width="100%" backgroundColor={"#323232 !important"} padding="2em 0" position={"relative"} height="100%">
+            <Box display={{md:"none",base:"block"}} border="1px solid grey" width="100%" bgColor={"black"} padding="1em 0">
+               <input type="text" placeholder="Search..." className="explore__search_input" />
+            </Box>
+            <Box width="100%" backgroundColor={"#323232 !important"} padding={{xs:"2em 0",base:".2em 0"}} position={"relative"} height="100%">
                 
-                    <Box width={{md:"940px",base:"95%"}} margin="0 auto">
+                    <Box width={{md:"940px",base:"98%"}} margin="0 auto">
                        {
                            clusters.map(cluster => <GridDisplay cluster={cluster} />)
                        }

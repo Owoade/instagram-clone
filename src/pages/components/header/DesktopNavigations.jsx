@@ -34,7 +34,8 @@ const DesktopNavigation = ({ active }) => {
                 </Box>))
             }
             <Box width={"40px"} height="40px" background=" linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);" borderRadius={"50%"} display="flex" justifyContent={"center"} alignItems="center">
-            <img src="https://images.pexels.com/photos/3990562/pexels-photo-3990562.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" style={{transform:"translate(0px,-.5px )"}} alt="" className="avatar" />
+                <Link to="/profile"><img src="https://images.pexels.com/photos/3990562/pexels-photo-3990562.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" style={{transform:"translate(0px,-.5px )"}} alt="" className="avatar" /></Link>
+            
             </Box>
             
         </Flex>
