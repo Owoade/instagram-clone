@@ -41,7 +41,7 @@ const GridDisplay = ({ cluster }) => {
             >
                 {
                     cluster.posts.map(post => <GridItem height="fit-content" bg='papayawhip' position="relative" >
-                        <Box color="white" bgColor="rgba(22, 22, 22, 0.295)" height="fit-content" position={"absolute"} opacity="0" display={{md:"flex",base:"none"}} alignItems={"center"} justifyContent="center" _hover={{ opacity: 1, backdropFilter: "blur(5px)" }} width="100%"  transition={".3s ease"}><Flex width="100px"><span><i className="ri-heart-fill"></i> {post.likes}</span> <Spacer /> <span><i class="ri-chat-3-fill"></i> {post.comments}</span> </Flex></Box>
+                        <Box color="white" bgColor="rgba(22, 22, 22, 0.295)" position={"absolute"} opacity="0" display={{md:"flex",base:"none"}} alignItems={"center"} justifyContent="center" _hover={{ opacity: 1, backdropFilter: "blur(5px)" }} width="100%" height="100%" transition={".3s ease"}><Flex width="100px"><span><i className="ri-heart-fill"></i> {post.likes}</span> <Spacer /> <span><i class="ri-chat-3-fill"></i> {post.comments}</span> </Flex></Box>
                         <img src={post.image} alt="" />
                     </GridItem>)
                 }
