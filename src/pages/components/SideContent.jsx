@@ -31,7 +31,7 @@ const SideContent = () => {
         <Flex width={"100%"} margin={"10px 0"}>
           <Text fontSize={"13px"} color="rgb(172, 172, 172)">Suggetions for you</Text>
           <Spacer />
-          <Text fontSize={"12px"}>See All</Text>
+          <Text fontSize={"12px"} color="white" >See All</Text>
         </Flex>
         {
           suggestions.map(suggestion => (<Suggestion suggestion = {suggestion} />))
