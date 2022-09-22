@@ -3,19 +3,19 @@ import {Link} from "react-router-dom"
 const DesktopNavigation = ({ active }) => {
     const links = [
         {
-            iconClass: "ri-home-5-line",
-            active: "ri-home-5-fill",
+            iconClass: "bi bi-house-door",
+            active: "bi bi-house-door-fill",
             name: "Home",
             path:"/"
         },
         {
-            iconClass: "ri-compass-3-line",
-            active: "ri-compass-3-fill",
+            iconClass: "bi bi-compass",
+            active: "bi bi-compass-fill",
             name: "Explore",
             path:"/explore"
         } ,{
-            iconClass: "ri-add-box-line",
-            active: "ri-add-box-fill",
+            iconClass: "bi bi-plus-circle",
+            active: "bi bi-plus-circle-fill",
             name: "Post",
             path:"/gallery"
         }
