@@ -2,9 +2,9 @@ import { Flex, Box,Tooltip } from "@chakra-ui/react";
 const DesktopNavigation = ({ active }) => {
     const links = [
         {
-            iconClass: "ri-home-5-line",
-            active: "ri-home-5-fill",
-            name: "Home"
+            iconClass: "bi bi-house-door",
+            active: "bi bi-house-door-fill",
+            name: "Hom"
         },
         {
             iconClass: "ri-video-line",
@@ -18,6 +18,7 @@ const DesktopNavigation = ({ active }) => {
         }
     ]
     return (
+        
         <Flex justifyContent={"space-between"} display={{xs:"flex",base:"none"}} width="200px">
             {
                 links.map(each => (<Box>
